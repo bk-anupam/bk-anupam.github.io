@@ -3,11 +3,8 @@ layout: post
 title: Nirvana Shatkama
 author: Adi Shankaracharya
 tags: default
----
-NIRVANA SHATAKAM || Complete with Lyrics and Meaning || Chidananda Roopah Shivoham Shivoham
-
- 
-Nirvana Shatakam (Complete Lyrics)
+--- 
+Nirvana Shatakam (Complete Lyrics):
 Mano Budhyahankaar Chitani Naaham, Na Cha Shrotra Jihve Na Cha Ghraana netre
 Na Cha Vyoma Bhumir Na Tejo Na Vayuh, Chidananda Rupah Shivoham Shivoham
 
@@ -27,8 +24,7 @@ Aham Nirvikalpo Niraakaara Rupo, Vibhutvaaccha Sarvatra Sarvendriyaanaam
 Na Chaa Sangatan Naiva Muktir Na meyah Chidananda Rupah Shivoham Shivoham
 
 
-
-Meaning of Nirvana Shatakam
+Meaning of Nirvana Shatakam:
 1) I am not mind, nor intellect, nor ego, nor the reflections of inner self. I am not the five senses. I am beyond that. I am not the ether, nor the earth, nor the fire, nor the wind (i.e. the five elements). I am indeed, That eternal knowing and bliss, Shiva, love and pure consciousness.
 
 2) Neither can I be termed as energy (Praana), nor five types of breath (Vaayu), nor the seven material essences (dhaatu), nor the five coverings (panca-kosha). Neither am I the five instruments of elimination, procreation, motion, grasping, or speaking. I am indeed, That eternal knowing and bliss, Shiva, love and pure consciousness.

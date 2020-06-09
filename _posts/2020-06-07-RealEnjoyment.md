@@ -1,0 +1,7 @@
+---
+layout: post
+title: The Real Enjoyment
+author: Swami Vivekanand
+tags: default
+---
+Who enjoys the picture, the seller or the seer? The seller is busy with his accounts, computing what his gain will be, how much profit he will realise on the picture. His brain is full of that. He is looking at the hammer, and watching the bids. He is intent on hearing how fast the bids are rising. That man is enjoying the picture who has gone there without any intention of buying or selling. He looks at the picture and enjoys it. So this whole universe is a picture, and when these desires have vanished, men will enjoy the world, and then this buying and selling and these foolish ideas of possession will be ended. The money-lender gone, the buyer gone, the seller gone, this world remains the picture, a beautiful painting. I never read of any more beautiful conception of God than the following: "He is the Great Poet, the Ancient Poet; the whole universe is His poem, coming in verses and rhymes and rhythms, written in infinite bliss." When we have given up desires, then alone shall we be able to read and enjoy this universe of God. Then everything will become deified. Nooks and corners, by-ways and shady places, which we thought dark and unholy, will be all deified. They will all reveal their true nature, and we shall smile at ourselves and think that all this weeping and crying has been but child's play, and we were only standing by, watching.

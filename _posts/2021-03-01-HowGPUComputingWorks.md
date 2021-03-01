@@ -1,3 +1,9 @@
+---
+layout: post
+title: How GPU computing works
+author: Anupam
+tags: default
+--- 
 If your program operates on large data sets performing computations that are essentially data parallel, you can harness the power of GPU for massive speed ups. Traditionally GPUs have been used in graphics rendering tasks which are data parallel in nature. Many applications that process large data sets can use a data-parallel programming model to speed up the computations. In 3D rendering, large sets of pixels and vertices are mapped to parallel threads. An image is nothing but a matrix or multidimensional array of pixels and GPUs can perform the same instruction on each pixel of an image in parallel. All thread processors in a core of GPU perform the same instructions, as they share the same control unit. 
 
 More specifically, the GPU is especially well-suited to address problems that can be expressed as data-parallel computations - the same program is executed on many data elements in parallel - with a high ratio of arithmetic operations to memory operations. Because the same program is executed for each data element, there is a lower requirement for sophisticated flow control, and because it is executed on many data elements and has high arithmetic intensity, the memory access latency can be hidden with calculations instead of big data caches.

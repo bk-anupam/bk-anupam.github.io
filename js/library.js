@@ -1,6 +1,26 @@
 $(document).ready(function(){
   
+  // Initialize animations
   init_document_ready();
+
+  // Add smooth scroll effect
+  $('a[href^="#"]').on('click', function(event) {
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 800);
+  });
+
+  // Fade in elements on scroll
+  $(window).scroll(function() {
+    $('.blurb').each(function() {
+      var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+      if (bottom_of_window > bottom_of_object) {
+        $(this).animate({'opacity':'1'}, 500);
+      }
+    });
+  });
 
 });
 
@@ -12,9 +32,29 @@ $(document).ready(function(){
  */
  
 function init_document_ready() {
-
+  // Initialize any existing functions
   create_colorSwatch();
+  
+  // Add hover effect to navigation
+  $('.nav-item').hover(
+    function() {
+      $(this).find('i').addClass('fa-bounce');
+    },
+    function() {
+      $(this).find('i').removeClass('fa-bounce');
+    }
+  );
 
+  // Add text animation to quote scroll
+  $('.scrolling-text').css({
+    'animation': 'scroll-left 20s linear infinite',
+    'white-space': 'nowrap'
+  });
+
+  // Add fade-in effect for blurb content
+  $('.blurb').css('opacity', '0').animate({
+    'opacity': '1'
+  }, 1000);
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - -

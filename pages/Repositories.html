@@ -4,13 +4,162 @@ title: My Projects & Repositories
 description: A collection of my public code repositories and projects.
 ---
 
-<h2>My Projects & GitHub Repositories</h2>
-<p>Here's a selection of my public work and learning exercises:</p>
-<ul>
-    <li><a href="/pages/JavaDsAlgos.html">Data structures and algorithms in java</a></li>
-    <li><a href="/pages/PythonDsAlgos">Data structures and algorithms in python</a></li>
-    <li><a href="/pages/DS_ML_Exercises.html">Data science and ML exercises</a></li>
-    <li><a href="/pages/AndrewNGExercises">Coursera Andrew NG ML course exercises</a></li>
-    <li><a href="/pages/DeepLearningAISpec.html">DeepLearning.AI specialization</a></li>
-    <!-- Add links to actual GitHub repos if preferred -->
-</ul>
+<div class="repositories-container"> <!-- Added a container for styling -->
+    <h3>Featured Projects & Repositories</h3>
+    <p>Here's a selection of my public work, learning exercises, and explorations:</p>
+
+    <div class="row repository-cards"> <!-- Bootstrap row to hold the cards -->
+
+        <!-- Card 1: Agentic RAG Bot -->
+        <div class="col-lg-4 col-md-6 mb-4"> <!-- Adjust columns (lg-4 for 3 cols, md-6 for 2 cols) -->
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="https://github.com/bk-anupam/LLM_agents/tree/main/RAG_BOT" target="_blank" rel="noopener noreferrer">Agentic RAG Telegram Bot</a>
+                    </h5>
+                    <p class="card-text">A spiritual chatbot built using agentic RAG principles and deployed on Telegram.</p> <!-- Add description -->
+                    <div class="tech-icons">
+                        <i class="fab fa-python" title="Python"></i>
+                        <i class="fab fa-telegram" title="Telegram"></i>                        
+                        <!-- Add other relevant icons like LangChain, Telegram etc. if available in FA -->
+                        <span class="tech-tag">LLM</span>
+                        <span class="tech-tag">RAG</span>
+                        <span class="tech-tag">LangGraph</span>                        
+                    </div>
+                </div>
+                <!-- Optional Footer for links like demo/GitHub stats -->
+                <!-- <div class="card-footer">
+                    <small class="text-muted">Optional Footer Link</small>
+                </div> -->
+            </div>
+        </div>
+        
+        <!-- Card 2: Disaster tweet prediction -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="https://github.com/bk-anupam/NLP/blob/master/Kaggle/DisasterTweetsPrediction/disaster_tweets_with_attention.ipynb" target="_blank" rel="noopener noreferrer">Disaster Tweets Classification</a>
+                    </h5>
+                    <p class="card-text">A kaggle bronze medal notebook on disaster tweets classification with LSTM and fasttext embeddings.</p>
+                     <div class="tech-icons">
+                        <i class="fab fa-python" title="Python"></i>
+                        <i class="fab fa-kaggle" title="Kaggle"></i>
+                        <span class="tech-tag">Pytorch</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">LSTM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3: Python DS/Algos -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="/pages/PythonDsAlgos">Python Data Structures & Algorithms</a>
+                    </h5>
+                    <p class="card-text">Implementations and exercises covering fundamental data structures and algorithms in Python.</p>
+                     <div class="tech-icons">
+                        <i class="fab fa-python" title="Python"></i>
+                        <span class="tech-tag">Algorithms</span>
+                        <span class="tech-tag">Data Structures</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4: DS/ML Exercises -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="/pages/DS_ML_Exercises.html">Data Science & ML Exercises</a>
+                    </h5>
+                    <p class="card-text">A collection of practical exercises and notebooks exploring various data science and machine learning concepts.</p>
+                     <div class="tech-icons">
+                        <i class="fab fa-python" title="Python"></i>
+                        <!-- Add icons for libraries like Pandas, Scikit-learn if desired/available -->
+                         <span class="tech-tag">Data Science</span>
+                         <span class="tech-tag">Machine Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5: Andrew NG Exercises -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="/pages/AndrewNGExercises">Coursera Andrew NG ML Exercises</a>
+                    </h5>
+                    <p class="card-text">Completed programming exercises from the classic Coursera Machine Learning course by Andrew Ng.</p>
+                     <div class="tech-icons">
+                        <!-- Add Octave/Matlab icon if available, or just tags -->
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Coursera</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6: DeepLearning.AI Spec -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="/pages/DeepLearningAISpec.html">DeepLearning.AI Specialization</a>
+                    </h5>
+                    <p class="card-text">Notes and exercises from the DeepLearning.AI TensorFlow Developer Professional Certificate specialization.</p>
+                     <div class="tech-icons">
+                        <i class="fab fa-python" title="Python"></i>
+                        <!-- Add TensorFlow icon if available -->
+                        <span class="tech-tag">Deep Learning</span>
+                        <span class="tech-tag">TensorFlow</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more cards here as needed -->
+         <!-- Card 7: Java DS/Algos -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="/pages/JavaDsAlgos.html">Java Data Structures & Algorithms</a>
+                    </h5>
+                    <p class="card-text">Implementations and exercises covering fundamental data structures and algorithms in Java.</p>
+                     <div class="tech-icons">
+                        <i class="fab fa-java" title="Java"></i>
+                        <span class="tech-tag">Algorithms</span>
+                        <span class="tech-tag">Data Structures</span>
+                    </div>
+                </div>
+            </div>
+        </div>         
+
+        <!-- Card 8: Audio classification -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="https://www.kaggle.com/work/collections/8166142" target="_blank" rel="noopener noreferrer">Music classification kaggle competition</a>
+                    </h5>
+                    <p class="card-text">A collection of my medal winning kaggle notebooks for audio classification competition.</p>
+                    <div class="tech-icons">
+                        <i class="fab fa-python" title="Python"></i>
+                        <i class="fab fa-kaggle" title="Kaggle"></i>
+                        <span class="tech-tag">Pytorch</span>
+                        <span class="tech-tag">CNN</span>
+                        <span class="tech-tag">Pytorch Lightning</span>
+                        <span class="tech-tag">Audio data</span>
+                    </div>
+                </div>
+            </div>
+        </div>        
+
+    </div> <!-- /.row -->
+</div> <!-- /.repositories-container -->

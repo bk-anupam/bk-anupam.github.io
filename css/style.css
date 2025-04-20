@@ -350,111 +350,198 @@ marquee {
 }
 
 /* ==========================================================================
-   Repository Page Styles
-   ========================================================================== */
+  Repository Page Styles
+  ========================================================================== */
 
-   .repositories-container {
-    margin-top: 2rem; /* Add some space below the header */
-  }
-    
-   /* Style for the main heading on the Repositories page */
-  .repositories-container h3 { /* Changed from h2 to h3 to match HTML */
-    font-family: 'Montserrat', sans-serif; /* Use header font */
-    font-size: 2.2rem; /* Increase size */
-    font-weight: 600; /* Make it bolder */
-    color: var(--primary-color); /* Use primary color */
-    margin-bottom: 0.75rem; /* Adjust spacing below heading */
-    /* border-bottom: 2px solid var(--secondary-color); Add an underline accent */
-    padding-bottom: 0.5rem; /* Space between text and underline */
-    display: inline-block; /* Make underline only span the text width */
-  }
+  .repositories-container {
+  margin-top: 2rem; /* Add some space below the header */
+}
+  
+  /* Style for the main heading on the Repositories page */
+.repositories-container h3 { /* Changed from h2 to h3 to match HTML */
+  font-family: 'Montserrat', sans-serif; /* Use header font */
+  font-size: 2.2rem; /* Increase size */
+  font-weight: 600; /* Make it bolder */
+  color: var(--primary-color); /* Use primary color */
+  margin-bottom: 0.75rem; /* Adjust spacing below heading */
+  /* border-bottom: 2px solid var(--secondary-color); Add an underline accent */
+  padding-bottom: 0.5rem; /* Space between text and underline */
+  display: inline-block; /* Make underline only span the text width */
+}
 
-  /* Style for the introductory paragraph */
-  .repositories-container p {
-    font-size: 1.4rem; /* Slightly larger paragraph text */
-    color: #555; /* Keep the slightly muted color */
-    margin-bottom: 2.5rem; /* Keep existing space below paragraph */
-    max-width: 800px; /* Optional: Limit width for better readability */
-    /* font-family: 'Merriweather', Georgia, Times; /* Already set by body, but can be explicit */
-  }
+/* Style for the introductory paragraph */
+.repositories-container p {
+  font-size: 1.4rem; /* Slightly larger paragraph text */
+  color: #555; /* Keep the slightly muted color */
+  margin-bottom: 2.5rem; /* Keep existing space below paragraph */
+  max-width: 800px; /* Optional: Limit width for better readability */
+  /* font-family: 'Merriweather', Georgia, Times; /* Already set by body, but can be explicit */
+}
+
+.repository-cards .card {
+  border: 1px solid #e0e0e0; /* Lighter border */
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff; /* White background for cards */
+  display: flex; /* Ensure flex properties for alignment */
+  flex-direction: column; /* Stack card body and footer vertically */
+}
+
+.repository-cards .card:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow on hover */
+}
+
+.repository-cards .card-body {
+  padding: 1.5rem;
+  flex-grow: 1; /* Allow body to grow and push footer down */
+  display: flex;
+  flex-direction: column;
+}
+
+.repository-cards .card-title {
+  margin-bottom: 0.75rem;
+  font-family: 'Montserrat', sans-serif; /* Match header font */
+  font-size: 1.2rem;
+}
+
+.repository-cards .card-title a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.repository-cards .card-title a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.repository-cards .card-text {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  flex-grow: 1; /* Allow text to take available space */
+  margin-bottom: 1rem; /* Space before icons */
+}
+
+.repository-cards .tech-icons {
+  margin-top: auto; /* Push icons to the bottom of the card-body */
+  font-size: 1.5rem; /* Size for Font Awesome icons */
+  color: var(--secondary-color); /* Color for icons */
+}
+
+.repository-cards .tech-icons i {
+  margin-right: 0.75rem; /* Space between icons */
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+.repository-cards .tech-icons i:hover {
+  opacity: 1;
+}
+
+/* Style for simple text tags */
+.repository-cards .tech-icons .tech-tag {
+  display: inline-block;
+  background-color: #eee;
+  color: #555;
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border-radius: 10px;
+  margin-right: 5px;
+  font-family: 'Montserrat', sans-serif;
+  vertical-align: middle; /* Align tags better with icons */
+}
+
+.repository-cards .card-footer {
+  background-color: #f9f9f9;
+  border-top: 1px solid #e0e0e0;
+  padding: 0.75rem 1.5rem;
+}
   
-  .repository-cards .card {
-    border: 1px solid #e0e0e0; /* Lighter border */
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #ffffff; /* White background for cards */
-    display: flex; /* Ensure flex properties for alignment */
-    flex-direction: column; /* Stack card body and footer vertically */
-  }
-  
-  .repository-cards .card:hover {
-    transform: translateY(-5px); /* Slight lift effect */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow on hover */
-  }
-  
-  .repository-cards .card-body {
-    padding: 1.5rem;
-    flex-grow: 1; /* Allow body to grow and push footer down */
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .repository-cards .card-title {
-    margin-bottom: 0.75rem;
-    font-family: 'Montserrat', sans-serif; /* Match header font */
-    font-size: 1.2rem;
-  }
-  
-  .repository-cards .card-title a {
-    text-decoration: none;
+/* ==========================================================================
+  Bio Content Styles (index.html)
+  ========================================================================== */
+
+.bio-content {
+  padding: 20px 0; /* Keep padding or adjust */
+  background-color: #ffffff; /* Optional: Give it a white card background */
+  padding: 2rem; /* Add padding inside */
+  border-radius: 8px; /* Optional: Rounded corners */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Optional: Subtle shadow */
+  margin-top: 2rem; /* Space below header */
+}
+
+.bio-content section {
+  margin-bottom: 2.5rem; /* Space between sections */
+}
+
+.bio-content .lead { /* Style the intro paragraph */
+  font-size: 1.4rem;
+  font-weight: 300; /* Lighter weight for lead */
+  color: var(--primary-color);
+}
+
+.bio-content .section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem; 
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  /* border-bottom: 1px solid #eee; /* Remove or comment out the border */
+  padding: 0.6rem 1rem; /* Add padding top/bottom and left/right */
+  display: block; /* Make it a block element to span width */
+  background-color: #f5f5f5; /* Light grey background */
+  border-radius: 5px; /* Optional: Slightly rounded corners */
+}
+
+.bio-content .section-title i {
+  margin-right: 0.75rem;
+  color: var(--secondary-color); 
+  font-size: 1.2rem; 
+}
+
+/* Style for lists with icons */
+.bio-content ul.icon-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bio-content ul.icon-list li {
+  padding-left: 2.5rem; /* Indent text to make space for icon */
+  position: relative;
+  margin-bottom: 0.8rem; /* Space between list items */
+  line-height: 1.7;
+  font-size: 1.3rem; /* Set specific size for list items */
+}
+
+.bio-content ul.icon-list .list-icon {
+  position: absolute;
+  left: 0;
+  top: 4px; /* Adjust vertical alignment */
+  color: var(--secondary-color); /* Icon color */
+  font-size: 1.1rem; /* Icon size */
+  width: 1.5rem; /* Ensure consistent width for alignment */
+  text-align: center;
+}
+
+.bio-philosophy p {
+  line-height: 1.8;
+  color: #333; /* Slightly darker than default muted */
+}
+
+.bio-connect p:first-of-type { /* The "Always up for a chat" line */
+  font-size: 1.4rem; /* Increased size */
+  margin-bottom: 1rem;
+  color: #333; /* Ensure it's not too light */
+}
+
+.bio-connect p:last-of-type { /* The "Let's build" line */
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 2rem;
     color: var(--primary-color);
-  }
-  
-  .repository-cards .card-title a:hover {
-    color: var(--secondary-color);
-    text-decoration: underline;
-  }
-  
-  .repository-cards .card-text {
-    font-size: 0.95rem;
-    color: #666;
-    line-height: 1.6;
-    flex-grow: 1; /* Allow text to take available space */
-    margin-bottom: 1rem; /* Space before icons */
-  }
-  
-  .repository-cards .tech-icons {
-    margin-top: auto; /* Push icons to the bottom of the card-body */
-    font-size: 1.5rem; /* Size for Font Awesome icons */
-    color: var(--secondary-color); /* Color for icons */
-  }
-  
-  .repository-cards .tech-icons i {
-    margin-right: 0.75rem; /* Space between icons */
-    opacity: 0.8;
-    transition: opacity 0.2s ease;
-  }
-  .repository-cards .tech-icons i:hover {
-    opacity: 1;
-  }
-  
-  /* Style for simple text tags */
-  .repository-cards .tech-icons .tech-tag {
-    display: inline-block;
-    background-color: #eee;
-    color: #555;
-    font-size: 0.75rem;
-    padding: 3px 8px;
-    border-radius: 10px;
-    margin-right: 5px;
-    font-family: 'Montserrat', sans-serif;
-    vertical-align: middle; /* Align tags better with icons */
-  }
-  
-  
-  .repository-cards .card-footer {
-    background-color: #f9f9f9;
-    border-top: 1px solid #e0e0e0;
-    padding: 0.75rem 1.5rem;
-  }
-  
+}
+
+/* Optional: Specific styling for chat list */
+.bio-content ul.chat-list li {
+    /* Add specific styles if desired */
+}

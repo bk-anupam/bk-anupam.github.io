@@ -335,7 +335,7 @@ marquee {
 
 .scrolling-text {
   display: inline-block;
-  animation: scroll-left 120s linear infinite; /* Further slowed down animation */
+  animation: scroll-left 60s linear infinite; /* Further slowed down animation */
   color: #f1c40f;
   font-style: italic;
   font-size: 1.5rem;

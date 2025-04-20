@@ -45,11 +45,11 @@ function init_document_ready() {
     }
   );
 
-  // Add text animation to quote scroll
-  $('.scrolling-text').css({
-    'animation': 'scroll-left 20s linear infinite',
-    'white-space': 'nowrap'
-  });
+  // // Add text animation to quote scroll
+  // $('.scrolling-text').css({
+  //   'animation': 'scroll-left 20s linear infinite',
+  //   'white-space': 'nowrap'
+  // });
 
   // Add fade-in effect for blurb content
   $('.blurb').css('opacity', '0').animate({

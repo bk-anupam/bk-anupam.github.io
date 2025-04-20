@@ -114,7 +114,7 @@ blockquote p { font-size: 16px; line-height: 1.6em; }
 /* Add margin to the right of the avatar */
 .header-avatar {
   /* Existing styles */
-  max-height: 90px; 
+  max-height: 100px; 
   width: auto;      
   border-radius: 4px; 
   flex-shrink: 0; 
@@ -125,6 +125,39 @@ blockquote p { font-size: 16px; line-height: 1.6em; }
 /* Ensure the text group takes remaining space if needed */
 .header-text-group {
    /* No specific styles needed unless further alignment required */
+}
+
+/* Ensure CV link matches Projects link style */
+.header .cv-link {
+  text-transform: none; /* Inherit from .projects-link a if possible, else specify */
+  font-size: 1.65rem;    /* Match Projects link size */
+  color: #f1c40f;       /* Match Projects link color */
+  font-weight: normal;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  vertical-align: middle; /* Align vertically with Projects link */
+}
+
+.header .cv-link:hover {
+  color: #ffffff; /* Match Projects link hover color */
+}
+
+/* Style the icon within the CV link */
+.header .cv-link i {
+   color: #f1c40f; /* Match the link color */
+   margin-right: 4px; /* Space between icon and text */
+}
+
+.header .cv-link:hover i {
+   color: #ffffff; /* Match hover color */
+}
+
+/* Style for the separator */
+.header .link-separator {
+  font-size: 1.4rem; /* Adjust size if needed */
+  color: #cccccc; /* Light grey separator */
+  vertical-align: middle; /* Align vertically */
+  margin: 0 8px; /* Space around the separator */
 }
 
 /* Navigation */

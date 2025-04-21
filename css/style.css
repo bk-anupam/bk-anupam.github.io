@@ -6,8 +6,36 @@
   --secondary-color: #3498db;
   --accent-color: #e74c3c;
   --text-color: #2c3e50;
+  --header-bg: linear-gradient(to right, #3498db, #2c3e50);
+  --footer-bg: linear-gradient(to right, #3498db, #2c3e50);
+  --content-bg: #ffffff;
+  --section-bg: #f5f5f5;
+  --icon-color: #3498db;
+  --header-link: #f1c40f;
+  --header-link-hover: #ffffff;
+  --footer-link: #ffffff;
+  --footer-link-hover: #f1c40f;
   --light-bg: #f9f9f9;
   --light-blue-bg: #eaf6ff; /* Added light blue variable (change hex code if desired) */
+}
+
+/* Dark theme overrides */
+body.dark-theme {
+  --primary-color: #f1f1f1;
+  --secondary-color: #7ed6df;
+  --accent-color: #f1c40f;
+  --text-color: #f1f1f1;
+  --header-bg: #111111;
+  --footer-bg: #111111;
+  --content-bg: #181818;
+  --section-bg: #23272b;
+  --icon-color: #f1c40f;
+  --header-link: #f1c40f;
+  --header-link-hover: #ffffff;
+  --footer-link: #f1c40f;
+  --footer-link-hover: #ffffff;
+  --light-bg: #23272b;
+  --light-blue-bg: #181818;
 }
 
 body { 
@@ -17,30 +45,31 @@ body {
   font-size: 16px;
   line-height: 1.8;
   color: var(--text-color);
-  /* background-color: var(--light-bg); /* Commented out or remove old background */
-  background-color: var(--light-blue-bg); /* Use the new light blue background */
+  background-color: var(--light-blue-bg);
+  transition: background 0.3s, color 0.3s;
 }
 
 /* Add new styles for the footer to match the header */
 .footer {
-  background: linear-gradient(to right, #3498db, #2c3e50); /* Header gradient */
-  color: white; /* Header text color */
-  padding: 10px 0; /* Vertical padding like header, zero horizontal */
-  margin-top: 3rem; /* Keep some space above the footer */
-  font-family: 'Montserrat', Helvetica, sans-serif; /* Header font */
+  background: var(--footer-bg);
+  color: var(--footer-link);
+  padding: 10px 0;
+  margin-top: 3rem;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  transition: background 0.3s, color 0.3s;
 }
 
 /* Style the links within the footer */
 .footer .footer-link {
-  color: white; /* White text for links */
+  color: var(--footer-link);
   text-decoration: none;
   transition: color 0.3s ease;
-  font-size: 1.5rem; /* Adjust size as needed */
+  font-size: 1.5rem;
 }
 
 /* Add a hover effect similar to header elements */
 .footer .footer-link:hover {
-  color: #f1c40f; /* Use the yellow accent color on hover */
+  color: var(--footer-link-hover);
   text-decoration: none;
 }
 
@@ -56,11 +85,12 @@ body {
 
 /* Ensure icons have consistent color and spacing */
 .footer .footer-link i {
-  margin-right: 6px; /* Space between icon and text */
-  color: white; /* Ensure icon is white */
+  margin-right: 6px;
+  color: var(--footer-link);
+  transition: color 0.3s;
 }
 .footer .footer-link:hover i {
-    color: #f1c40f; /* Match link hover color */
+  color: var(--footer-link-hover);
 }
 
 
@@ -80,14 +110,14 @@ blockquote p { font-size: 16px; line-height: 1.6em; }
   margin-bottom: 3rem;
   border-bottom: 2px solid var(--primary-color);
   padding-bottom: 1rem;
-  background: linear-gradient(to right, #3498db, #2c3e50);
-  color: white;
-  /* Replace padding: 20px; with specific values */
-  padding: 20px 20px 5px 20px; /* T R B L - Reduced bottom padding to 5px (adjust as needed) */
+  background: var(--header-bg);
+  color: var(--footer-link);
+  padding: 20px 20px 5px 20px;
+  transition: background 0.3s, color 0.3s;
 }
 
 .header h3.text-muted a {
-  color: white;
+  color: var(--footer-link);
   font-size: 2rem;
   font-weight: 700;
   transition: color 0.3s ease;
@@ -100,7 +130,7 @@ blockquote p { font-size: 16px; line-height: 1.6em; }
 }
 
 .header h4 {
-  color: #f1c40f;
+  color: var(--header-link);
   font-size: 1.5rem;
   margin: 1rem 0;
 }
@@ -129,27 +159,26 @@ blockquote p { font-size: 16px; line-height: 1.6em; }
 
 /* Ensure CV link matches Projects link style */
 .header .cv-link {
-  text-transform: none; /* Inherit from .projects-link a if possible, else specify */
-  font-size: 1.65rem;    /* Match Projects link size */
-  color: #f1c40f;       /* Match Projects link color */
+  text-transform: none;
+  font-size: 1.65rem;
+  color: var(--header-link);
   font-weight: normal;
   text-decoration: none;
   transition: color 0.3s ease;
-  vertical-align: middle; /* Align vertically with Projects link */
+  vertical-align: middle;
 }
 
 .header .cv-link:hover {
-  color: #ffffff; /* Match Projects link hover color */
+  color: var(--header-link-hover);
 }
 
-/* Style the icon within the CV link */
 .header .cv-link i {
-   color: #f1c40f; /* Match the link color */
-   margin-right: 4px; /* Space between icon and text */
+  color: var(--header-link);
+  margin-right: 4px;
 }
 
 .header .cv-link:hover i {
-   color: #ffffff; /* Match hover color */
+  color: var(--header-link-hover);
 }
 
 /* Style for the separator */
@@ -164,16 +193,44 @@ blockquote p { font-size: 16px; line-height: 1.6em; }
 h3.text-muted a {text-decoration: none; color: #999999; }
 h3.text-muted a:hover { text-decoration: none; color: #0088cc; }
 
-.nav-pills > li > a {
+.nav-pills > li > a,
+.nav-pills > li > button {
   color: var(--primary-color);
   font-weight: 500;
-  padding: 8px 10px; /* Reduced padding */
+  padding: 8px 10px;
   border-radius: 20px;
   transition: all 0.3s ease;
-  margin-left: 5px; /* Reduced spacing for icons */
+  margin-left: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
 }
 
-.nav-pills > li > a:hover {
+.nav-pills > li > button {
+  color: #f1c40f;
+  outline: none;
+  box-shadow: none;
+  min-width: 40px;
+  min-height: 40px;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.nav-pills > li > button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-pills > li > button > i {
+  pointer-events: none;
+}
+
+.nav-pills > li > a:hover,
+.nav-pills > li > button:hover {
   background-color: var(--secondary-color);
   color: white;
 }
@@ -352,29 +409,24 @@ marquee {
 /* Update existing rule for the link */
 .header .projects-link a {
   text-transform: none;
-  font-size: 1.65rem;    /* Increased font size by 50% */
-  color: #f1c40f;       /* Changed color to match tagline */
+  font-size: 1.65rem;
+  color: var(--header-link);
   font-weight: normal;
   text-decoration: none;
   transition: color 0.3s ease; 
 }
 
-/* Update existing rule for the link hover state */
 .header .projects-link a:hover {
-  color: #ffffff; /* Change hover color to white for contrast */
+  color: var(--header-link-hover);
 }
 
-/* Update existing rule for the icon */
 .header .projects-link i {
-   color: #f1c40f; /* Match the link color */
-   margin-right: 4px; 
-   /* Optional: Adjust icon size slightly if needed */
-   /* font-size: 1.5rem; */ 
+  color: var(--header-link);
+  margin-right: 4px;
 }
 
-/* Update existing rule for the icon hover state */
 .header .projects-link a:hover i {
-   color: #ffffff; /* Match hover color */
+  color: var(--header-link-hover);
 }
 
 /* Ensure the social icon list has no right padding */
@@ -495,21 +547,22 @@ marquee {
   ========================================================================== */
 
 .bio-content {
-  padding: 20px 0; /* Keep padding or adjust */
-  background-color: #ffffff; /* Optional: Give it a white card background */
-  padding: 2rem; /* Add padding inside */
-  border-radius: 8px; /* Optional: Rounded corners */
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Optional: Subtle shadow */
-  margin-top: 2rem; /* Space below header */
+  padding: 20px 0;
+  background-color: var(--content-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  margin-top: 2rem;
+  transition: background 0.3s, color 0.3s;
 }
 
 .bio-content section {
   margin-bottom: 2.5rem; /* Space between sections */
 }
 
-.bio-content .lead { /* Style the intro paragraph */
+.bio-content .lead {
   font-size: 1.4rem;
-  font-weight: 300; /* Lighter weight for lead */
+  font-weight: 300;
   color: var(--primary-color);
 }
 
@@ -519,16 +572,16 @@ marquee {
   font-weight: 600;
   color: var(--primary-color);
   margin-bottom: 1.5rem;
-  /* border-bottom: 1px solid #eee; /* Remove or comment out the border */
-  padding: 0.6rem 1rem; /* Add padding top/bottom and left/right */
-  display: block; /* Make it a block element to span width */
-  background-color: #f5f5f5; /* Light grey background */
-  border-radius: 5px; /* Optional: Slightly rounded corners */
+  padding: 0.6rem 1rem;
+  display: block;
+  background-color: var(--section-bg);
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
 }
 
 .bio-content .section-title i {
   margin-right: 0.75rem;
-  color: var(--secondary-color); 
+  color: var(--icon-color);
   font-size: 1.2rem; 
 }
 

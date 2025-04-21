@@ -1,5 +1,35 @@
 $(document).ready(function(){
   
+  // Theme toggle logic
+  function setTheme(theme) {
+    if (theme === 'dark') {
+      $('body').addClass('dark-theme');
+      $('#theme-toggle-icon').removeClass('fa-moon').addClass('fa-sun');
+      $('#theme-toggle').attr('aria-pressed', 'true');
+    } else {
+      $('body').removeClass('dark-theme');
+      $('#theme-toggle-icon').removeClass('fa-sun').addClass('fa-moon');
+      $('#theme-toggle').attr('aria-pressed', 'false');
+    }
+  }
+
+  // On load: set theme from localStorage or system preference
+  var savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    setTheme(savedTheme);
+  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    setTheme('dark');
+  } else {
+    setTheme('light');
+  }
+
+  // Toggle on button click
+  $('#theme-toggle').on('click', function() {
+    var isDark = !$('body').hasClass('dark-theme');
+    setTheme(isDark ? 'dark' : 'light');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+
   // Initialize animations
   init_document_ready();
 
@@ -86,5 +116,3 @@ function create_colorSwatch() {
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-
-

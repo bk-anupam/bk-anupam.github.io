@@ -492,7 +492,7 @@ marquee {
 
 .repository-cards .card-title a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: #111; /* Always dark for readability on white card background in all themes */
 }
 
 .repository-cards .card-title a:hover {
@@ -502,7 +502,7 @@ marquee {
 
 .repository-cards .card-text {
   font-size: 0.95rem;
-  color: #666;
+  color: #111; /* Always dark for readability on white card background in all themes */
   line-height: 1.6;
   flex-grow: 1; /* Allow text to take available space */
   margin-bottom: 1rem; /* Space before icons */

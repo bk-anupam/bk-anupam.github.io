@@ -697,3 +697,155 @@ marquee {
 .bio-content ul.chat-list li {
     /* Add specific styles if desired */
 }
+
+/* ==========================================================================
+   About Me Page Redesign
+   ========================================================================== */
+
+.about-blurb {
+  background: var(--content-bg);
+  color: var(--text-color);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(44,62,80,0.10);
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin: 2.5rem auto;
+  max-width: 540px;
+  border-left: 8px solid var(--secondary-color);
+  position: relative;
+  transition: background 0.3s, color 0.3s;
+}
+
+.about-avatar {
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(44,62,80,0.18);
+  border: 3px solid var(--secondary-color);
+  background: var(--section-bg);
+}
+
+.about-title {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: var(--primary-color);
+  letter-spacing: 0.5px;
+}
+
+.about-quote {
+  background: var(--section-bg);
+  color: var(--accent-color);
+  font-style: italic;
+  font-size: 1.4rem;
+  border-left: 4px solid var(--accent-color);
+  padding: 1rem 1.2rem;
+  margin: 0 0 1.5rem 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.06);
+  text-align: left;
+  transition: background 0.3s, color 0.3s;
+}
+
+.about-intro {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.about-list li {
+  display: flex;
+  align-items: center;
+  background: var(--light-bg);
+  color: var(--primary-color);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 0.85rem 1rem;
+  font-size: 1.3rem;
+  box-shadow: 0 1px 4px rgba(44,62,80,0.07);
+  transition: background 0.3s, color 0.3s;
+}
+
+.about-list-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.85rem;
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+  min-width: 1.7rem;
+}
+
+.about-list li:hover {
+  background: var(--secondary-color);
+  color: #fff;
+  box-shadow: 0 2px 10px rgba(44,62,80,0.13);
+}
+
+.about-list li:hover .about-list-icon {
+  color: #fff;
+}
+
+.about-continue {
+  text-align: right;
+  font-style: italic;
+  color: var(--accent-color);
+  font-size: 1.3rem;
+  margin-top: 1.2rem;
+}
+
+/* Dark theme overrides for About Me */
+body.dark-theme .about-blurb {
+  background: var(--content-bg);
+  color: var(--text-color);
+  border-left: 8px solid var(--secondary-color);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+}
+
+body.dark-theme .about-avatar {
+  background: var(--section-bg);
+  border: 3px solid var(--secondary-color);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+
+body.dark-theme .about-title {
+  color: var(--primary-color);
+}
+
+body.dark-theme .about-quote {
+  background: var(--section-bg);
+  color: var(--accent-color);
+  border-left: 4px solid var(--accent-color);
+}
+
+body.dark-theme .about-list li {
+  background: var(--section-bg);
+  color: var(--primary-color);
+}
+
+body.dark-theme .about-list li:hover {
+  background: var(--secondary-color);
+  color: #181818;
+}
+
+body.dark-theme .about-list-icon {
+  color: var(--secondary-color);
+}
+
+body.dark-theme .about-list li:hover .about-list-icon {
+  color: #181818;
+}
+
+body.dark-theme .about-continue {
+  color: var(--accent-color);
+}

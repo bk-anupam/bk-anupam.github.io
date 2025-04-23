@@ -87,6 +87,19 @@ function init_document_ready() {
   }, 1000);
 }
 
+// --- START: Add Hamburger Menu Toggle Logic ---
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+if (navToggle && navLinks) {
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    // Toggle aria-expanded attribute for accessibility
+    const isExpanded = navLinks.classList.contains('open');
+    navToggle.setAttribute('aria-expanded', isExpanded);
+  });
+}
+// --- END: Add Hamburger Menu Toggle Logic ---
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 // for each li.color, grab the hex color value in the item and set is at the background-color 
 

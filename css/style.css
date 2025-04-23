@@ -457,7 +457,7 @@ marquee {
 /* Style for the introductory paragraph */
 .repositories-container p {
   font-size: 1.4rem; /* Slightly larger paragraph text */
-  color: #555; /* Keep the slightly muted color */
+  color: var(--primary-color); /* Use primary color */
   margin-bottom: 2.5rem; /* Keep existing space below paragraph */
   max-width: 800px; /* Optional: Limit width for better readability */
   /* font-family: 'Merriweather', Georgia, Times; /* Already set by body, but can be explicit */
@@ -562,6 +562,51 @@ marquee {
   margin-left: -1rem;
   margin-right: -1rem;
 }
+
+/* ==========================================================================
+   Repository Page Styles - Dark Theme Overrides
+   ========================================================================== */
+
+   body.dark-theme .repository-cards .card {
+    background-color: #2a2a2a; /* Dark grey background for cards */
+    border-color: #444; /* Slightly lighter border for visibility */
+  }
+  
+  body.dark-theme .repository-cards .card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Darker shadow for dark theme */
+  }
+  
+  body.dark-theme .repository-cards .card-title a {
+    color: #e0e0e0; /* Light grey for title text */
+  }
+  
+  body.dark-theme .repository-cards .card-title a:hover {
+    color: var(--secondary-color); /* Use the dark theme's secondary color for hover */
+  }
+  
+  body.dark-theme .repository-cards .card-text {
+    color: #cccccc; /* Slightly darker light grey for description */
+  }
+  
+  body.dark-theme .repository-cards .tech-icons {
+    color: var(--secondary-color); /* Use dark theme's secondary color for icons */
+  }
+  
+  body.dark-theme .repository-cards .tech-icons .tech-tag {
+    background-color: #444; /* Darker background for tags */
+    color: #e0e0e0; /* Light grey text for tags */
+  }
+  
+  body.dark-theme .repository-cards .card-footer {
+    background-color: #333; /* Darker footer background */
+    border-top-color: #444; /* Match card border */
+  }
+  
+  /* Ensure the intro paragraph color is also handled in dark theme */
+  /* (You might already have this from the previous request) */
+  body.dark-theme .repositories-container p {
+    color: var(--primary-color); 
+  }
   
 /* ==========================================================================
   Bio Content Styles (index.html)

@@ -975,17 +975,17 @@ body.dark-theme .about-continue {
 }
 
 .landing-section-card h2 {
-  font-size: 1.8rem;
+  font-size: 2.0rem;
   margin-bottom: 1.1rem;
 }
 
 .landing-section-card ul,
 .landing-section-card p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .landing-section-card li {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .landing-tagline {
@@ -1008,6 +1008,8 @@ body.dark-theme .landing-section-card {
 
 .landing-header .landing-quote {
   font-size: 1.5rem;
+  color: #a04203;
+  font-weight: bold;
 }
 
 .landing-section-card {

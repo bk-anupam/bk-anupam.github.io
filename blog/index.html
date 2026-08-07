@@ -1,11 +1,20 @@
 ---
 layout: default
 title: Jewels of knowledge
+description: Reflections and notes on knowledge, the mind, and the self.
 ---
-	<h3>{{ page.title }}</h3>
-	<ul class="posts">
+<div class="blog-container">
+  <h3>{{ page.title }}</h3>
+  <p>Reflections and notes written along the way:</p>
 
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
+  <ul class="blog-post-list">
+    {% for post in site.posts %}
+    <li class="blog-post-card">
+      <a href="{{ post.url }}" title="{{ post.title }}">
+        <span class="blog-post-title">{{ post.title }}</span>
+        <span class="blog-post-date">{{ post.date | date_to_string }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

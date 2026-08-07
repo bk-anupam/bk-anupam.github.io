@@ -1,6 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic);
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
-
 :root {
   --primary-color: #2c3e50;
   --secondary-color: #3498db;
@@ -829,9 +826,108 @@ marquee {
   /* Ensure the intro paragraph color is also handled in dark theme */
   /* (You might already have this from the previous request) */
   body.dark-theme .repositories-container p {
-    color: var(--primary-color); 
+    color: var(--primary-color);
   }
-  
+
+/* ==========================================================================
+   Blog Page Styles
+   ========================================================================== */
+
+.blog-container {
+  margin-top: 2rem;
+}
+
+.blog-container h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+}
+
+.blog-container > p {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  max-width: 800px;
+}
+
+.blog-post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-post-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-post-card:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post-card a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.1rem 1.5rem;
+  text-decoration: none;
+}
+
+.blog-post-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.blog-post-card a:hover .blog-post-title {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.blog-post-date {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #777;
+  white-space: nowrap;
+}
+
+body.dark-theme .blog-container > p {
+  color: var(--primary-color);
+}
+
+body.dark-theme .blog-post-card {
+  background-color: #2a2a2a;
+  border-color: #444;
+}
+
+body.dark-theme .blog-post-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-theme .blog-post-title {
+  color: #e0e0e0;
+}
+
+body.dark-theme .blog-post-date {
+  color: #aaa;
+}
+
+@media (max-width: 600px) {
+  .blog-post-card a {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+}
+
 /* ==========================================================================
   Bio Content Styles (index.html)
   ========================================================================== */
